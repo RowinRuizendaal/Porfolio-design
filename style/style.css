@@ -335,6 +335,7 @@ section.banner ul li:nth-child(2) a img {
     height: 567px;
     box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: 0.5s;
 }
 
