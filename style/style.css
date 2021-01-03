@@ -7,28 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-.banner {
-    /* position: absolute; */
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
-}
-
-.banner.active {
-    position: relative;
-    right: 300px;
-    transition: 0.5s
-    /* SCSS needed to trigger menu display */
-}
-
 header {
     position: absolute;
     top: 0;
@@ -66,6 +44,22 @@ header .logo {
     cursor: pointer;
 }
 
+.banner {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+}
+
+.banner.active {
+    position: relative;
+    right: 300px;
+    transition: 0.5s
+    /* SCSS needed to trigger menu display */
+}
+
 .banner video {
     position: absolute;
     top: 0;
@@ -75,15 +69,22 @@ header .logo {
     object-fit: cover;
 }
 
-.overlay {
+.banner::after {
     position: absolute;
+    height: 100vh;
+    background: linear-gradient(to left, #1a1f2b, #0a3a34);
+    mix-blend-mode: overlay;
+}
+
+.overlay {
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to left, #1a1f2b, #0a3a34);
     
-    mix-blend-mode: overlay;
+    mix-blend-mode: overlay; */
 }
 
 .text {
@@ -213,7 +214,7 @@ section.banner ul li:nth-child(2) a img {
 @media (max-width: 991px) {
     .banner,
     .banner header {
-        padding: 40px;
+        padding: 20px;
     }
     .text h2 {
         font-size: 3em;
@@ -335,7 +336,6 @@ section.banner ul li:nth-child(2) a img {
     height: 567px;
     box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
     transition: 0.5s;
 }
 
