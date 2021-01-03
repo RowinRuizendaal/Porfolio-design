@@ -88,13 +88,16 @@
 
 
 @media (max-width: 991px) {
+
     .banner,
     .banner header {
         padding: 20px;
     }
+
     .text h2 {
         font-size: 3em;
     }
+
     .text h3 {
         font-size: 2em;
     }
@@ -190,6 +193,7 @@ header .navigation li a {
     header .navigation {
         display: none;
     }
+
     header .navigation.active {
         position: fixed;
         top: 0;
@@ -205,11 +209,13 @@ header .navigation li a {
         z-index: 10;
 
     }
+
     header .navigation li a {
         margin: 10px 0;
         font-size: 1.5em;
         font-weight: 300;
     }
+
     .toggle {
         position: relative;
         width: 30px;
@@ -221,13 +227,14 @@ header .navigation li a {
         cursor: pointer;
         z-index: 1000;
     }
+
     .toggle.active {
-      position: fixed;
-      right: 40px;
-      background: url('../assets/images/close.png');
-      background-size: 30px;
-      background-repeat: no-repeat;
-      background-position: center;
+        position: fixed;
+        right: 40px;
+        background: url('../assets/images/close.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -238,7 +245,7 @@ header .navigation li a {
 /* SVG ANIMATION */
 #logo {
     width: 150px;
-    animation: fill 0.5s ease forwards 3.5s;  
+    animation: fill 0.5s ease forwards 3.5s;
 }
 
 
@@ -317,6 +324,7 @@ header .navigation li a {
     from {
         fill: transparent;
     }
+
     to {
         fill: white
     }
@@ -339,22 +347,31 @@ header .navigation li a {
     position: relative;
     width: 393px;
     height: 567px;
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
     transition: 0.5s;
 }
 
 .about .book:hover {
     transform: rotateY(35deg);
-    -webkit-transform: rotateY(35deg);
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    -ms-transform-style: rotateY(35deg);
+    -webkit-transform-style: rotateY(35deg);
+    -moz-transform-style: rotateY(35deg);
+    -o-transform-style: rotateY(35deg);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about .book:active {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    -ms-transform-style: rotateY(180deg);
+    -webkit-transform-style: rotateY(180deg);
+    -moz-transform-style: rotateY(180deg);
+    -o-transform-style: rotateY(180deg);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about .book:before {
@@ -366,7 +383,10 @@ header .navigation li a {
     background: url('../assets/images/book/side.jpg');
     background-position: center;
     transform: rotateY(90deg);
-    -webkit-transform: rotateY(90deg);
+    -ms-transform-style: rotateY(90deg);
+    -webkit-transform-style: rotateY(90deg);
+    -moz-transform-style: rotateY(90deg);
+    -o-transform-style: rotateY(90deg);
 }
 
 .about .book:after {
@@ -378,7 +398,10 @@ header .navigation li a {
     background: url('../assets/images/book/back.jpg');
     background-position: center;
     transform: rotateY(180deg) translateZ(60px);
-    -webkit-transform: rotateY(180deg) translateZ(60px);
+    -ms-transform-style: rotateY(180deg) translateZ(60px);
+    -webkit-transform-style: rotateY(180deg) translateZ(60px);
+    -moz-transform-style: rotateY(180deg) translateZ(60px);
+    -o-transform-style: rotateY(180deg) translateZ(60px);
 }
 
 
